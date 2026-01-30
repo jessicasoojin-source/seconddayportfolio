@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Jessy</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Hola, soy Jessy 👋</h1>
+    <p>Portfolio simple para practicar HTML + CSS + JS.</p>
+    <a class="btn" href="#proyectos">Ver proyectos</a>
+  </header>
+
+  <main>
+    <section id="proyectos">
+      <h2>Proyectos</h2>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Landing Page</h3>
+          <p>Una página simple con hero y botón.</p>
+          <button class="mini-btn" data-name="Landing Page">Ver</button>
+        </article>
+
+        <article class="card">
+          <h3>Galería</h3>
+          <p>Sección con tarjetas y diseño en grid.</p>
+          <button class="mini-btn" data-name="Galería">Ver</button>
+        </article>
+
+        <article class="card">
+          <h3>Contacto</h3>
+          <p>Formulario básico (sin enviar todavía).</p>
+          <button class="mini-btn" data-name="Contacto">Ver</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form id="form">
+        <input type="text" name="name" placeholder="Tu nombre" required />
+        <input type="email" name="email" placeholder="Tu email" required />
+        <textarea name="msg" rows="4" placeholder="Mensaje" required></textarea>
+        <button class="btn" type="submit">Enviar</button>
+      </form>
+      <p id="status"></p>
+    </section>
+  </main>
+
+  <footer>
+    <small>© <span id="year"></span> Jessy</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
